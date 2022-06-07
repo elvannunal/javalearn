@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class recusiveAsalSayı {
+
+    static boolean recusiveAsal(int sayi) {
+        int sayac = 0;
+        for (int i = 2; i < sayi; i++) {
+            if (sayi % i == 0) {
+                sayac++;
+            }
+        }
+        if(sayac==0){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+    public static void main(String[] args) {
+        Scanner inp=new Scanner(System.in);
+        System.out.print("Bir sayi giriniz: ");
+        int sayi=inp.nextInt();
+
+        if(recusiveAsal(sayi)==true){
+            System.out.println("Girilen sayi asaldir.");
+        }else{
+            System.out.println("Girilen sayi asal degildir.");
+        }
+    }
+}
