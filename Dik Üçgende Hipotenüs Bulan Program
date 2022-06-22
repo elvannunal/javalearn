@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class ÜçgeninAlanı {
+    public static void main(String[] args) {
+        double a,b,c,u,cevre,alan;
+        Scanner inp=new Scanner(System.in);
+        System.out.println("Ucgenin kenarlarini giriniz: ");
+        a= inp.nextDouble();
+        b= inp.nextDouble();
+        c= inp.nextDouble();
+
+        u=(a+b+c)/2;
+        cevre=(2*u);
+        alan=Math.sqrt(u*((u-a)*(u-b)*(u-c)));
+        System.out.println("Ücgenin alani: "+alan);
+    }
+}
