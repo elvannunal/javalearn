@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ArmstrongSayi {
+    public static void main(String[] args) {
+        Scanner inp=new Scanner(System.in);
+        System.out.print("Bir deger giriniz: ");
+        int number= inp.nextInt();
+        int basNumber=0;
+        int result=0;
+
+        while (number!=0){
+            result+=(number%10);
+            number/=10;
+            basNumber++;
+        }
+       System.out.println("Sayinin rakamlari toplami= "+result);
+    }
+}
